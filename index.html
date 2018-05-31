@@ -9,17 +9,33 @@
       <link rel="stylesheet" href="css/style.css">
    </head>
    <body>
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">OMAD Helper</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="./">Gallery Post <span class="sr-only">(current)</span></a></li>
+                <li><a href="sidebar.html">Sidebar Posts</a></li>
+                <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+        </nav>
+  
       <div class="container">
-         <form class="my-form">
+         <form class="gallery-form">
             <div class="col-md-6">
                <div class="form-group">
-                  <label>Starting Number</label>
+                  <label>Photo ID Start</label>
                   <input type="number" class="form-control" id="start" placeholder="0">
                </div>
             </div>
             <div class="col-md-6">
                <div class="form-group">
-                    <label>Ending Number</label>
+                    <label>Photo ID End</label>
                   <input type="number" class="form-control" id="end" placeholder="100">
                </div>
             </div>
