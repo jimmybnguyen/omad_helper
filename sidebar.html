@@ -3,7 +3,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>List of Numbers Generator</title>
+      <title>OMAD Helper - Sidebar</title>
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link rel="stylesheet" href="css/style.css">
@@ -17,8 +17,8 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
-                <li><a href="sidebar.html">Sidebar Posts</a></li>
+                <li><a href="index.html">Gallery Post <span class="sr-only">(current)</span></a></li>
+                <li class="active"><a href="sidebar.html">Sidebar Posts</a></li>
                 <li><a href="../navbar-fixed-top/">Fixed top</a></li>
               </ul>
             </div><!--/.nav-collapse -->
@@ -26,19 +26,34 @@
         </nav>
   
       <div class="container">
-         <form class="my-form">
-            <div class="col-md-6">
-               <div class="form-group">
-                  <label>Starting Number</label>
-                  <input type="number" class="form-control" id="start" placeholder="0">
-               </div>
+         <form class="sidebar-form">
+           <row>
+              <div class="col-md-6">
+                <div class="form-group">
+                    <label>Article Link</label>
+                    <input type="text" class="form-control" id="link" placeholder="http://www.washington.edu/omad">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                      <label>Article Title</label>
+                    <input type="text" class="form-control" id="title" placeholder="A Really Awesome Article">
+                </div>
+              </div>
+          </row>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label>Article Date</label>
+                <input type="text" class="form-control" id="date" placeholder="May 5, 2018">
             </div>
+          </div>
             <div class="col-md-6">
-               <div class="form-group">
-                    <label>Ending Number</label>
-                  <input type="number" class="form-control" id="end" placeholder="100">
-               </div>
+                <div class="form-group">
+                    <label>Image Link</label>
+                  <input type="text" class="form-control" id="image" placeholder="http://www.washington.edu/omad/files/2015/08/W-Logo_Purple_Hex-official-e1440610352803-150x150.png">
+              </div>
             </div>
+          </row>
             <button type="submit" class="btn btn-default">Submit</button>
          </form>
          <div class="form-group">
