@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OMAD Helper - Equity Focus</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">OMAD Helper</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Gallery Post <span class="sr-only">(current)</span></a></li>
+                    <li><a href="sidebar.html">Sidebar Posts</a></li>
+                    <li class="active"><a href="equityFocus.html">Equity Focus</a></li>
+                    <li><a href="https://github.com/jimmybnguyen/omad_helper" target="_blank">Repo</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+        <!--/.container-fluid -->
+    </nav>
+
+    <div class="container">
+        <form class="equity-form">
+            <row>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Article Title</label>
+                        <input type="text" class="form-control" id="title" placeholder="A Really Awesome Article">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Article Caption</label>
+                        <input type="text" class="form-control" id="caption" placeholder="A Really Awesome Caption!">
+                    </div>
+                </div>
+            </row>
+
+            <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Image Link</label>
+                        <input type="text" class="form-control" id="image"
+                            placeholder="http://www.washington.edu/omad/files/2015/08/W-Logo_Purple_Hex-official-e1440610352803-150x150.png">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Article Link</label>
+                        <input type="text" class="form-control" id="link" placeholder="http://www.washington.edu/">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Button Title</label>
+                        <input type="text" class="form-control" id="button" placeholder="Uw News">
+                    </div>
+                </div>    
+                <button type="submit" class="btn btn-default">Submit</button>
+             </form>
+             <div class="form-group">
+                <label for="result">Result</label>
+                <textarea class="form-control" rows="5" id="result"></textarea>
+             </div>
+          </div>
+       </body>
+       <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+       <!-- Latest compiled and minified JavaScript -->
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+       <script src="js/app.js"></script>
+    </html>
