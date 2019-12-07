@@ -20,3 +20,19 @@ $('.sidebar-form').on('submit', function () {
 	return false;
 });
 
+$('.equity-form').on('submit', function () {
+	let articleTitle = document.getElementById("title").value;
+	let articleCaption = document.getElementById("caption").value;
+	let articleImg = document.getElementById("image").value;
+	let articleLink = document.getElementById("link").value;
+	let buttonTitle = document.getElementById("button").value;
+
+	document.getElementById("result").value = "[tile] \n" +
+	`<div><img class="alignnone wp-image-5597 size-full" src="${articleImg}" alt="${articleTitle}" width="504" height="337" /></div> \n` +
+	`<h3><a href="${articleLink}" target="_blank" rel="noopener noreferrer">${articleTitle}</a></h3> \n` + 
+	`${articleCaption} \n\n` +
+	`[button url="${articleLink}" color="purple" small="true"] ${buttonTitle} [/button] \n` + 
+	`[/tile]`;
+	return false;
+});
+;
